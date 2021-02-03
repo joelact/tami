@@ -1,29 +1,43 @@
 {
-  "name": "tami",
-  "version": "1.0.0",
-  "description": "Typescript client for asterisk's AMI",
-  "main": "index.js",
-  "scripts": {
-    "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/joelact/tami.git"
-  },
-  "keywords": [
-    "AMI",
-    "Typescript"
-  ],
-  "author": "Joel Teixeira",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/joelact/tami/issues"
-  },
-  "homepage": "https://github.com/joelact/tami#readme",
-  "devDependencies": {
-    "@types/node": "^14.6.2",
-    "nodemon": "^2.0.4",
-    "typescript": "^4.0.2"
-  }
+    "name": "tami",
+    "version": "1.0.0",
+    "description": "Typescript client for asterisk's AMI",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist/**/*"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "tsc && node dist/index.js",
+        "prepare": "npm run build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/joelact/tami.git"
+    },
+    "keywords": [
+        "AMI",
+        "Typescript"
+    ],
+    "author": "Joel Teixeira",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/joelact/tami/issues"
+    },
+    "homepage": "https://github.com/joelact/tami#readme",
+    "devDependencies": {
+        "@types/node": "^14.6.2",
+        "@typescript-eslint/eslint-plugin": "^4.14.1",
+        "@typescript-eslint/parser": "^4.14.1",
+        "eslint": "^7.18.0",
+        "eslint-config-prettier": "^7.2.0",
+        "eslint-plugin-import": "^2.22.1",
+        "eslint-plugin-prettier": "^3.3.1",
+        "nodemon": "^2.0.4",
+        "prettier": "^2.2.1",
+        "typescript": "^4.0.2"
+    },
+    "dependencies": {}
 }
