@@ -1,5 +1,5 @@
 {
-    "name": "@joelact/tami",
+    "name": "tami",
     "version": "0.1.0",
     "description": "Typescript client for asterisk's AMI",
     "main": "dist/index.js",
