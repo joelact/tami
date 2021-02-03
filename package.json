@@ -1,6 +1,6 @@
 {
     "name": "tami",
-    "version": "1.0.0",
+    "version": "0.1.0",
     "description": "Typescript client for asterisk's AMI",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
